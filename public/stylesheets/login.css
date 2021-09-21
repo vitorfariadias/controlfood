@@ -1,0 +1,57 @@
+@import url("../stylesheets/utils/variables.css");
+
+.login__container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-grey);
+  font-family: var(--font-family-01);
+}
+
+.login__card {
+  max-width: 710px;
+  max-height: 472px;
+  background-color: var(--white);
+  border-radius: 20px;
+  box-shadow: var(--dropshadow);
+  margin: auto;
+  align-items: center;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family-01);
+}
+
+.login__form--button {
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 5.37rem;
+  padding-right: 5.37rem;
+  margin-top: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+  font-family: var(--font-family-01);
+}
+.login__form--item {
+  margin-top: 1rem;
+  border: none;
+  border-bottom: 1px solid var(--black);
+  font-family: var(--font-family-01);
+}
+
+.login__form--button:hover {
+  background-color: var(--black);
+  color: var(--white);
+  border: 1px solid var(--black);
+}
+
+.login__form--link > a {
+  color: var(--black);
+}
+
+.login__form--link {
+  padding-top: var(--spacing-sm);
+  padding-bottom: var(--spacing-sm);
+}
