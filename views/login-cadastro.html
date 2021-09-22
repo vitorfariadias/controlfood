@@ -7,15 +7,22 @@
 
     <link rel="stylesheet" href="../public/stylesheets/login.css" />
 
-    <title>ControlFood | Efetuar Login</title>
+    <title>ControlFood | Cadastro de usuário</title>
   </head>
   <body>
     <div class="login__container login__card">
-      <figure>
+      <figure class="login__logo">
         <img src="../public/images/logo.svg" alt="Logo ControlFood" />
       </figure>
 
       <form class="login__form">
+        <label for="login__form--username"></label>
+        <input
+          type="text"
+          class="login__form--username login__form--item"
+          name="login__form--username"
+          placeholder="nome"
+        />
         <label for="login__form--email"></label>
         <input
           type="text"
@@ -33,15 +40,10 @@
         <input type="button" class="login__form--button" value="entrar" />
       </form>
 
-      <span class="login__form--link">
-        <a href="#">esqueci minha senha</a>
-        |
-        <a href="#">fazer cadastro</a>
-      </span>
     </div>
 
     <footer>
-      <a href="index.html">Voltar</a>
-    </footer>
+        <a href="index.html">Voltar</a>
+      </footer>
   </body>
 </html>

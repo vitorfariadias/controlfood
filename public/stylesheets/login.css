@@ -5,6 +5,8 @@
   flex-direction: column;
   background-color: var(--background-grey);
   font-family: var(--font-family-01);
+  position: relative;
+  
 }
 
 .login__card {
@@ -39,6 +41,7 @@
   border: none;
   border-bottom: 1px solid var(--black);
   font-family: var(--font-family-01);
+  background-color: transparent;
 }
 
 .login__form--button:hover {
