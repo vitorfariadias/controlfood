@@ -34,6 +34,7 @@
   margin-top: var(--spacing-sm);
   margin-bottom: var(--spacing-sm);
   font-family: var(--font-family-01);
+  cursor: pointer;
 }
 .login__form--item {
   margin-top: 1rem;
