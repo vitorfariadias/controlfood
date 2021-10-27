@@ -3,13 +3,19 @@ class Produto {
     constructor(){
         this.id = 1;
         this.arrayProdutos = [];
+        this.editId = null;
     }
 
     salvar() {
         let produto = this.lerDados();
 
         if(this.validaCampos(produto)) {
-            this.adicionar(produto);
+            if(this.editId == null){
+                this.adicionar(produto);
+            } else{
+                this.atualizar(this.editId, produto);
+            }
+            
         }
         
         this.listaTabela();
@@ -39,6 +45,10 @@ class Produto {
 
             let imgEdit = document.createElement('img');
             imgEdit.src = 'image/edit1.png';
+            imgEdit.setAttribute("onclick", "produto.preparaEditacao("+ JSON.stringify(this.arrayProdutos[i]) +")");
+            imgEdit.addEventListener('click', function(){
+                document.querySelector('.bg-modal').style.display = 'flex';
+            });
 
             let imgDelete = document.createElement('img');
             imgDelete.src = 'image/delete1.png';
@@ -46,12 +56,37 @@ class Produto {
 
             td_acoes.appendChild(imgEdit);
             td_acoes.appendChild(imgDelete);
+
+            console.log(this.arrayProdutos);
         }
     }
 
     adicionar(produto) {
         this.arrayProdutos.push(produto);
         this.id++;
+    }
+
+    atualizar(id, produto) {
+        for (let i = 0; i < this.arrayProdutos.length; i++) {
+            if(this.arrayProdutos[i].id == id) {
+                this.arrayProdutos[i].nomeProduto = produto.nomeProduto;
+                this.arrayProdutos[i].valorv = produto.valorv;
+                this.arrayProdutos[i].valorc = produto.valorc;
+                this.arrayProdutos[i].descricao = produto.descricao;
+            }
+        }
+    }
+
+    preparaEditacao(dados) {
+
+        this.editId = dados.id;
+
+        document.getElementById('produto').value = dados.nomeProduto;
+        document.getElementById('valorv').value = dados.valorv;
+        document.getElementById('valorc').value = dados.valorc;
+        document.getElementById('descricao').value = dados.descricao;
+
+        document.getElementById('btn1').innerText = 'atualizar';
     }
 
     lerDados(){
@@ -97,6 +132,9 @@ class Produto {
         document.getElementById('valorv').value = '';
         document.getElementById('valorc').value = '';
         document.getElementById('descricao').value = '';
+
+        document.getElementById('btn1').innerText = 'Salvar';
+        this.editId = null;
     }
 
     deletar(id) {
@@ -127,18 +165,4 @@ document.getElementById('close_pop').addEventListener('click', function(){
 
 document.getElementById('add_pop').addEventListener('click', function(){
     document.querySelector('.bg-modal').style.display = 'none';
-});
-
-
-
-document.getElementById('remove_tab').addEventListener('click', function(){
-    document.querySelector('.modal_remove').style.display = 'flex';
-});
-
-document.getElementById('sim_remove').addEventListener('click', function(){
-    document.querySelector('.modal_remove').style.display = 'none';
-});
-
-document.getElementById('nao_remove').addEventListener('click', function(){
-    document.querySelector('.modal_remove').style.display = 'none';
 });

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produtos</title>
+    <link rel="stylesheet" href="/public/stylesheets/produtos_style.css" />
+    <link rel="shortcut icon" href="/public/images/logo-icon.svg" />
+  </head>
+
+  <body>
+    <!--side bar-->
+    <div class="sidebar">
+      <!-- TO DO: SEPARAR SIDE BAR DO CONTEÚDO DA PÁGINA -->
+      <div class="sidebar_logo">
+        <img src="image/logo.png" alt="" />
+      </div>
+      <div class="sidebar_content">
+        <ul>
+          <li>
+            <a href="">VisãoGeral<img src="image/vector.png" alt="" /></a>
+          </li>
+          <div class="produtos">
+            <li>
+              <a href="index.html"
+                >Produtos<img src="image/vector.png" alt=""
+              /></a>
+            </li>
+          </div>
+          <li>
+            <a href="">Delivery<img src="image/vector.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="">Lucro<img src="image/vector.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="">Produção<img src="image/vector.png" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--main content-->
+
+    <div class="main_content">
+      <!--Card-->
+
+      <br />
+      <div class="card">
+        <div class="title">
+          <h1>Cadastro de Produtos</h1>
+        </div>
+
+        <div class="search_box">
+          <img
+            id="img_pesquisa"
+            src="/public/images/search-icon.svg"
+            alt="pesquisar"
+          />
+          <input type="text" class="search_txt" placeholder="Pesquise aqui!"
+        </div>
+
+        <div class="table">
+          <div class="content">
+            <table border="1">
+              <thead>
+                <th>ID</th>
+                <th>Produtos</th>
+                <th>Valor de Venda</th>
+                <th>Valor de Custo</th>
+                <th>Descrição</th>
+                <th class="center">Ações</th>
+              </thead>
+              <tbody id="tbody"></tbody>
+            </table>
+          </div>
+        </div>
+        <div id="add">
+          <button>Adicionar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL ADICIONAR PRODUTOS -->
+    <div class="bg-modal">
+      <div class="modal-content">
+        <div id="close_pop">+</div>
+
+        <h1 class="adc_prod">Adicionar Produtos</h1>
+
+        <label for="produto" class="inf">Produto:</label>
+        <br />
+        <input type="text" class="modal-input" id="produto" />
+        <br />
+        <label for="valor-venda" class="inf">Valor de Venda:</label>
+        <br />
+        <input type="number" class="modal-input" id="valorv" />
+        <br />
+        <label for="valor-custo" class="inf">Valor de custo:</h1>
+        <br />
+        <input type="number" class="modal-input" id="valorc" />
+        <br />
+        <label for="descricao" class="inf">Descrição:</h1>
+        <br />
+        <input type="text" class="modal-input" id="descricao" />
+        <br />
+        <div id="add_pop">
+          <button onclick="produto.salvar()" id="btn1">Adicionar</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/public/script/produtos.js"></script>
+  </body>
+</html>

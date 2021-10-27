@@ -1,9 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 :root {
   /* COLORS */
   --black: #000;
   --white: #fff;
+  --dark-blue: #1f4173;
   --background-grey: #f5f7fb;
+  --background-dark-transparent: rgba(0, 0, 0, 0.7);
   /* BOX SHADOW */
   --dropshadow: 0px 4px 90px rgba(163, 171, 185, 0.24);
 
@@ -11,6 +13,21 @@
   --spacing-sm: 1rem;
 
   /* FONT-FAMILY */
-  --font-family-01: "Open Sans", Arial, Verdana, sans-serif;
-  --font-family-02: "Sparta", Arial, Verdana, sans-serif;
+  --font-family-01: 'Open Sans', Arial, Verdana, sans-serif;
+  --font-family-02: 'Sparta', Arial, Verdana, sans-serif;
+
+  /* FONT WEIGHT */
+  --light: 300;
+  --regular: 400;
+  --medium: 500;
+  --semi-bold: 600;
+  --bold: 700;
+  --extra-bold: 800;
+
+  /* FONT SIZE */
+  --font-rg: 1rem;
+  --font-large: 1.5rem;
+
+  /* LINE HEIGHT */
+  --height-rg: 1rem;
 }
