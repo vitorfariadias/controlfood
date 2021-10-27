@@ -6,19 +6,6 @@
   font-family: var(--font-family-01);
 }
 
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #bbb;
-  border-radius: 20px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #ccc;
-}
-
 .sidebar {
   background-color: #01c2ff;
   width: 176px;
@@ -90,66 +77,54 @@
 }
 
 .card {
-  margin-right: auto;
-  margin-left: auto;
-  float: none;
-  width: 1198px;
+  margin-left: var(--spacing-rg);
+  width: var(--full-width);
   height: 428px;
-  background: #ffffff;
-  box-shadow: 0px 4px 90px rgba(163, 171, 185, 0.24);
-  border-radius: 20px;
+  background: var(--white);
+  box-shadow: var(--dropshadow);
+  border-radius: var(--radius-rg);
 }
 
-.title h1 {
+.title {
   text-align: center;
-  padding-top: 16px;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 33px;
-
+  padding-top: var(--spacing-rg);
+  font-weight: var(--semi-bold);
+  font-size: var(--font-rg);
   align-items: center;
-  color: #1f4173;
+  color: var(--dark-blue);
 }
 
 .search_box {
-  margin-top: 20px;
+  /* TO DO: MAKE INLINE MARGINS */
+  margin-top: var(--spacing-rg);
+  margin-bottom: var(--spacing-rg);
   margin-left: auto;
   margin-right: auto;
   width: 894px;
   height: 44px;
-  background: #f2f2f2;
-  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.09);
-  border-radius: 20px;
+  background: var(--background-grey);
+  border-radius: var(--radius-rg);
 }
 
 .search_txt {
   position: absolute;
-  background: none;
-  padding-right: 650px;
-  padding-top: 11px;
-  padding-bottom: 11px;
-  margin-top: 5px;
-  margin-left: 10px;
+  background: transparent;
+  padding-top: var(--spacing-rg);
+  padding-left: var(--spacing-s);
   border: none;
-  padding-bottom: 5px;
   outline: none;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 19px;
+  font-weight: var(--light);
+  font-size: var(--font-rg);
+  line-height: var(--height-rg);
 }
 
 #img_pesquisa {
-  padding-left: 15px;
+  padding-left: var(--spacing-rg);
   padding-top: 12px;
 }
 
 .table {
-  margin-top: 20px;
-
+  margin-top: var(--spacing-l);
   position: absolute;
   width: 1150px;
   height: 240px;
@@ -192,36 +167,30 @@ table td img {
   padding-top: 7px;
 }
 
-#add {
+.button {
   position: absolute;
   width: 105px;
   height: 31px;
   left: 1200px;
   top: 400px;
-  background: rgba(31, 65, 115, 0.1);
-  border: 1px solid #1f4173;
+  background-color: var(--background-grey);
+  border: 1px solid var(--black);
   box-sizing: border-box;
-  border-radius: 5px;
+  border-radius: var(--radius-s);
 }
 
 #add button {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 19px;
-  padding-left: 20px;
+  font-weight: var(--regular);
+  font-size: var(--font-rg);
+  line-height: var(--height-rg);
+  padding-left: 16px;
   padding-top: 4px;
   border: none;
-  background-color: transparent;
 }
 
-#add button {
-  text-decoration: none;
-}
-
-#add button:hover {
-  color: green;
+.button:hover {
+  color: var(--white);
+  background-color: var(--dark-blue);
 }
 
 .content {
@@ -277,12 +246,11 @@ tr:nth-child(even) {
 
 .modal-content {
   width: 700px;
-  /* height: 250px; */
   background-color: white;
   box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   position: relative;
-  padding-bottom: var(--spacing-sm);
+  padding-bottom: var(--spacing-rg);
   box-shadow: var(--dropshadow);
 }
 
@@ -377,9 +345,9 @@ tr:nth-child(even) {
 
 .adc_prod {
   text-align: center;
-  padding-top: var(--spacing-sm);
+  padding-top: var(--spacing-rg);
   font-weight: var(--semi-bold);
-  font-size: var(--font-large);
+  font-size: var(--font-l);
   color: var(--dark-blue);
 }
 
@@ -398,7 +366,7 @@ tr:nth-child(even) {
 }
 
 .modal-content textarea {
-  margin-left: var(--spacing-sm);
+  margin-left: var(--spacing-rg);
 }
 
 #add_pop button {
@@ -413,10 +381,6 @@ tr:nth-child(even) {
   background-color: transparent;
 }
 
-#add_pop button {
-  text-decoration: none;
-}
-
 #add_pop {
   margin-right: 30px;
   margin-top: 20px;
@@ -427,6 +391,7 @@ tr:nth-child(even) {
   border: 1px solid #1f4173;
   box-sizing: border-box;
   border-radius: 5px;
+  text-decoration: none;
 }
 
 #add_pop button:hover {
@@ -435,11 +400,10 @@ tr:nth-child(even) {
 
 #close_pop {
   position: absolute;
-  right: 15px;
+  right: var(--spacing-rg);
   top: 6px;
-  font-size: 25px;
-  font-family: Open Sans;
-  font-style: normal;
+  font-size: var(--font-xl);
+  font-weight: var(--light);
   transform: rotate(45deg);
   cursor: pointer;
 }

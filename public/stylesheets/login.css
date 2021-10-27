@@ -1,4 +1,4 @@
-@import url("../stylesheets/utils/variables.css");
+@import url('../stylesheets/utils/variables.css');
 
 .login__container {
   display: flex;
@@ -31,8 +31,8 @@
   padding-bottom: 1rem;
   padding-left: 5.37rem;
   padding-right: 5.37rem;
-  margin-top: var(--spacing-sm);
-  margin-bottom: var(--spacing-sm);
+  margin-top: var(--spacing-rg);
+  margin-bottom: var(--spacing-rg);
   font-family: var(--font-family-01);
   cursor: pointer;
 }
@@ -55,6 +55,6 @@
 }
 
 .login__form--link {
-  padding-top: var(--spacing-sm);
-  padding-bottom: var(--spacing-sm);
+  padding-top: var(--spacing-rg);
+  padding-bottom: var(--spacing-rg);
 }

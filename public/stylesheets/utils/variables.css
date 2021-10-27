@@ -9,8 +9,14 @@
   /* BOX SHADOW */
   --dropshadow: 0px 4px 90px rgba(163, 171, 185, 0.24);
 
+  /* BORDER RADIUS */
+  --radius-s: 0.5rem;
+  --radius-rg: 1.25rem;
+
   /* MARGIN, PADDING */
-  --spacing-sm: 1rem;
+  --spacing-s: 0.5rem;
+  --spacing-rg: 1rem;
+  --spacing-l: 2rem;
 
   /* FONT-FAMILY */
   --font-family-01: 'Open Sans', Arial, Verdana, sans-serif;
@@ -26,8 +32,15 @@
 
   /* FONT SIZE */
   --font-rg: 1rem;
-  --font-large: 1.5rem;
+  --font-l: 1.5rem;
+  --font-xl: 2rem;
 
   /* LINE HEIGHT */
   --height-rg: 1rem;
+
+  /* FULL WIDTH */
+  --full-width: 100%;
+
+  /* FULL HEIGHT */
+  --full-height: 100%;
 }
