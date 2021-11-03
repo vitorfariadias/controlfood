@@ -179,14 +179,14 @@ table td img {
   border-radius: var(--radius-s);
 }
 
-#add button {
+/* #add button {
   font-weight: var(--regular);
   font-size: var(--font-rg);
   line-height: var(--height-rg);
   padding-left: 16px;
   padding-top: 4px;
   border: none;
-}
+} */
 
 .button:hover {
   color: var(--white);
@@ -286,7 +286,7 @@ tr:nth-child(even) {
   color: #1f4173;
 }
 
-#sim_remove {
+/* #sim_remove {
   margin-right: 30px;
   margin-top: 20px;
   width: 105px;
@@ -297,7 +297,7 @@ tr:nth-child(even) {
   border: 1px solid #1f4173;
   box-sizing: border-box;
   border-radius: 5px;
-}
+} */
 
 #nao_remove {
   margin-right: 30px;
@@ -311,7 +311,7 @@ tr:nth-child(even) {
   border-radius: 5px;
 }
 
-#sim_remove button {
+/* #sim_remove button {
   font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
@@ -321,7 +321,7 @@ tr:nth-child(even) {
   padding-top: 4px;
   border: none;
   background-color: transparent;
-}
+} */
 
 #nao_remove button {
   font-family: Open Sans;
@@ -335,9 +335,9 @@ tr:nth-child(even) {
   background-color: transparent;
 }
 
-#sim_remove button:hover {
+/* #sim_remove button:hover {
   color: green;
-}
+} */
 
 #nao_remove button:hover {
   color: red;
@@ -369,7 +369,7 @@ tr:nth-child(even) {
   margin-left: var(--spacing-rg);
 }
 
-#add_pop button {
+/* #add_pop button {
   font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
@@ -379,9 +379,9 @@ tr:nth-child(even) {
   padding-top: 4px;
   border: none;
   background-color: transparent;
-}
+} */
 
-#add_pop {
+/* #add_pop {
   margin-right: 30px;
   margin-top: 20px;
   float: right;
@@ -392,11 +392,11 @@ tr:nth-child(even) {
   box-sizing: border-box;
   border-radius: 5px;
   text-decoration: none;
-}
+} */
 
-#add_pop button:hover {
+/* #add_pop button:hover {
   color: green;
-}
+} */
 
 #close_pop {
   position: absolute;

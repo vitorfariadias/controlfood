@@ -10,3 +10,6 @@ Repositório para o projeto ControlFood, integrante do Projeto Integrador do 6º
 
 ## Padrão CSS
 * BEM - Block Element Modifier
+* CSS Variables
+* Flexbox
+* Grid Layout

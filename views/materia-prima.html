@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Materia-Prima</title>
+
+    <link rel="icon" type="image/svg" href="/public/images/logo-icon.svg" />
+    <link rel="stylesheet" href="/public/stylesheets/materia-prima.css" />
+  </head>
+  <body>
+    <div class="sidenav">
+      <section class="nav-item">
+        <a href="#" class="nav__logo">
+          <img src="/public/images/logo.svg" />
+        </a>
+        <a href="#">Visão Geral</a>
+        <a href="#">Produtos</a>
+        <a href="#">Delivery</a>
+        <a href="#">Usuário</a>
+      </section>
+    </div>
+
+    <div class="materia-prima__card">
+      <form class="materia-prima__form">
+        <h1>Matéria Prima</h1>
+        <label for="nomeProduto">Nome</label><br />
+        <input type="text" id="nomeProduto" name="nomeProduto" /><br />
+        <label for="preco">Preco</label><br />
+        <input type="number" id="precoProduto" name="precoProduto" /><br />
+        <section>
+          Selecione o produto que participa:
+          <select id="produto">
+            <option value="produto">Produto</option>
+            <option value="produto">Produto</option>
+            <option value="produto">Produto</option>
+            <option value="produto">Produto</option>
+            <option value="produto">Produto</option>
+          </select>
+        </section>
+        <button class="cadastrar__button">Cadastrar</button>
+      </form>
+    </div>
+  </body>
+</html>

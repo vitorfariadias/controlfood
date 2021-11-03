@@ -4,6 +4,7 @@
   --black: #000;
   --white: #fff;
   --dark-blue: #1f4173;
+  --light-blue: #01c2ff;
   --background-grey: #f5f7fb;
   --background-dark-transparent: rgba(0, 0, 0, 0.7);
   /* BOX SHADOW */
@@ -16,7 +17,9 @@
   /* MARGIN, PADDING */
   --spacing-s: 0.5rem;
   --spacing-rg: 1rem;
+  --spacing-rg-2: 1.8rem;
   --spacing-l: 2rem;
+  --spacing-xl: 2.3rem;
 
   /* FONT-FAMILY */
   --font-family-01: 'Open Sans', Arial, Verdana, sans-serif;
@@ -31,6 +34,7 @@
   --extra-bold: 800;
 
   /* FONT SIZE */
+  --font-s: 0.8rem;
   --font-rg: 1rem;
   --font-l: 1.5rem;
   --font-xl: 2rem;
