@@ -84,7 +84,7 @@ td {
 .delivery__table--service {
   font-weight: var(--regular);
 }
-.delivery__table--actions {
+.delivery__table--actions a {
   text-decoration: none;
   cursor: pointer;
 }
