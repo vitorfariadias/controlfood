@@ -48,10 +48,29 @@ body {
   margin-top: var(--spacing-rg);
   margin-left: var(--spacing-rg);
 }
-
+.delivery__title {
+  font-weight: var(--bold);
+  font-size: var(--font-xl);
+}
 .delivery__table,
 th,
 td {
   border: 1px solid black;
   border-collapse: collapse;
+  text-align: center;
+  font-size: var(--font-rg);
+}
+.delivery__table--header {
+  font-weight: var(--semi-bold);
+}
+
+.delivery__table--content {
+  font-weight: var(--light);
+}
+.delivery__table--service {
+  font-weight: var(--regular);
+}
+.delivery__table--actions {
+  text-decoration: none;
+  cursor: pointer;
 }
