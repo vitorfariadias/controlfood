@@ -43,8 +43,8 @@
   --height-rg: 1rem;
 
   /* FULL WIDTH */
-  --full-width: 100%;
+  --full-width: 100vw;
 
   /* FULL HEIGHT */
-  --full-height: 100%;
+  --full-height: 100vh;
 }
