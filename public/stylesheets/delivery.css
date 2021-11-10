@@ -36,9 +36,10 @@ body {
 .nav-item .active {
   background-color: var(--dark-blue);
   color: var(--white);
-  padding: var(--spacing-rg);
+  padding: var(--spacing-rg) var(--spacing-l);
   margin: 0;
 }
+
 .nav__logo {
   width: 200px;
 }
