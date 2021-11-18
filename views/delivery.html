@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delivery</title>
+
+    <link rel="stylesheet" href="/public/stylesheets/delivery.css" />
+    <link rel="icon" type="image/svg" href="/public/images/logo-icon.svg" />
+  </head>
+  <body>
+    <!-- TO DO: COMPONENTIZAR MENU LATERAL -->
+    <div class="sidenav">
+      <section class="nav-item">
+        <a href="#" class="nav__logo">
+          <img src="/public/images/logo.svg" />
+        </a>
+        <a href="#">Visão Geral</a>
+        <a href="#">Produtos</a>
+        <a href="#" class="active">Delivery</a>
+        <a href="#">Usuário</a>
+      </section>
+    </div>
+
+    <div class="delivery__card">
+      <h1 class="delivery__title">Delivery</h1>
+
+      <table class="delivery__table">
+        <tr class="delivery__table--header">
+          <th>nome</th>
+          <th>plano</th>
+          <th>mensalidade</th>
+          <th>taxa/produto</th>
+          <th></th>
+        </tr>
+        <tr class="delivery__table--content">
+          <td class="delivery__table--service">ifood</td>
+          <td>basico</td>
+          <td>R$ 100,00</td>
+          <td>12%</td>
+          <td class="delivery__table--actions">
+            <a class="delivery__table--edit" href="#">
+              <img src="/public/images/edit.svg" />
+            </a>
+            <a class="delivery__table--delete" href="#">
+              <img src="/public/images/delete.svg" />
+            </a>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
