@@ -3,10 +3,10 @@ import { ReactComponent as Logo } from '../images/logo.svg';
 
 function Navbar() {
   return (
-    <nav className="sidenav">
-      <section className="nav-item">
-        <a href="home" className="nav__logo">
-          <Logo />
+    <nav className="navbar">
+      <section className="nav-container">
+        <a href="home" className="nav-logo">
+          <Logo className='nav-logo__img'/>
         </a>
         <a href="geral">Visão Geral</a>
         <a href="produtos">Produtos</a>
