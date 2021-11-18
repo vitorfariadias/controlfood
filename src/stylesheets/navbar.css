@@ -1,34 +1,19 @@
 @import url('./utils/variables.css');
 
-.sidenav {
+.navbar {
   grid-area: 'sidenav';
   background-color: var(--white);
   border: 1px solid black;
   height: 100vh;
 }
 
-.nav-item a {
+.nav-container {
   display: flex;
   flex-direction: column;
-  color: var(--black);
-  text-decoration: none;
-  padding-top: var(--spacing-rg-2);
-  padding-bottom: var(--spacing-rg-2);
-}
-
-.nav-item {
-  display: flex;
-  flex-direction: column;
-  padding-right: var(--spacing-rg);
   align-items: flex-end;
-}
-.nav-item .active {
-  background-color: var(--dark-blue);
-  color: var(--white);
-  padding: var(--spacing-rg) var(--spacing-l);
-  margin: 0;
+  padding: var(--spacing-rg) var(--spacing-rg) 0 0;
 }
 
-.nav__logo {
-  width: 200px;
+.nav-logo__img {
+  width: 142px;
 }
