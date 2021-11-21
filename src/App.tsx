@@ -1,9 +1,11 @@
 import './App.css';
-import Navbar from './Navbar/navbar';
+import Routes from './Routes';
 
 function App() {
   return (
-    <Navbar/>
+    <>
+      <Routes />
+    </>
   );
 }
 

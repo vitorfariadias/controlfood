@@ -1,6 +1,6 @@
-@import url('/public/stylesheets/utils/variables.css');
+/* @import url('/public/stylesheets/utils/variables.css'); */
 
-body {
+/* body {
   display: grid;
   grid-template-columns: 250px 1fr;
   grid-template-areas: 'sidenav card';
@@ -9,10 +9,10 @@ body {
   font-family: var(--font-family-01);
   overflow: hidden;
   box-sizing: border-box;
-}
+} */
 
 /* CARD */
-.delivery__card {
+/* .delivery__card {
   grid-area: 'card';
   position: relative;
   width: inherit;
@@ -56,4 +56,4 @@ td {
 .delivery__table--actions a {
   text-decoration: none;
   cursor: pointer;
-}
+} */
