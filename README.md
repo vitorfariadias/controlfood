@@ -10,3 +10,12 @@ Repositório para o projeto ControlFood, integrante do Projeto Integrador do 6º
 
 ## Padrão CSS
 * BEM - Block Element Modifier
+
+## Frameworks
+* React - [Documentação Oficial React] (https://pt-br.reactjs.org/)
+
+## Linguagens de Programação
+* Typescript - [Documentação Oficial Typescript] (https://www.typescriptlang.org/)
+
+## Gerenciador de Pacotes
+* npm - [Documentação Oficial npm] (https://www.npmjs.com/)
