@@ -1,0 +1,29 @@
+@import url('./utils/variables.css');
+/* @import url('/src/App.css'); */
+
+.products-content {
+  display: grid;
+  grid-area: content;
+  background-color: var(--background-grey);
+}
+
+.products-card {
+  display: flex;
+  flex-direction: column;
+  background-color: green;
+  border-radius: var(--radius-rg);
+  padding: var(--spacing-rg);
+}
+
+.products-table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: var(--spacing-rg);
+}
+
+.products-add {
+  margin: var(--spacing-rg);
+  justify-content: flex-end;
+}
