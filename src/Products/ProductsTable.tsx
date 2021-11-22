@@ -1,8 +1,14 @@
 // EQUIVALE A PRODUCT CARD
 import { ReactComponent as Delete } from '../images/delete.svg';
 import { ReactComponent as Edit } from '../images/edit.svg';
+import { Product } from './types';
 
-function ProductsTable() {
+type Props = {
+  product: Product;
+}
+
+function ProductsTable({ product }: Props) {
+
   return (
     <div>
       <table className="products-table">
@@ -12,15 +18,15 @@ function ProductsTable() {
             <th>descricao</th>
             <th>valorVenda</th>
             <th>valorCusto</th>
-            <th>Ações</th>
+            <th></th>
           </tr>
         </thead>
         <tbody className="products-table__row">
           <tr>
-            <td>nome do produto</td>
-            <td>descricao do produto</td>
-            <td>R$ 12,00</td>
-            <td>R$ 2,00</td>
+            <td>{product.name}</td>
+            <td>{product.description}</td>
+            <td>{product.saleValue}</td>
+            <td>{product.costValue}</td>
             <td>
               <Delete />
               <Edit />
