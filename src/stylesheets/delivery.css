@@ -1,59 +1,71 @@
-/* @import url('/public/stylesheets/utils/variables.css'); */
+@import url('./utils/variables.css');
 
-/* body {
-  display: grid;
-  grid-template-columns: 250px 1fr;
-  grid-template-areas: 'sidenav card';
-  gap: 20px;
-  margin: 0px;
-  font-family: var(--font-family-01);
-  overflow: hidden;
-  box-sizing: border-box;
-} */
-
-/* CARD */
-/* .delivery__card {
-  grid-area: 'card';
-  position: relative;
-  width: inherit;
-  height: 50vh;
-  background-color: var(--white);
-  border-radius: 20px;
-  box-shadow: var(--dropshadow);
-  margin-top: var(--spacing-rg);
-  padding-right: var(--spacing-rg);
+.delivery-container {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
 }
-.delivery__title {
+
+.delivery-card {
+  display: block;
+  background-color: white;
+  border-radius: var(--radius-rg);
+  padding: var(--spacing-rg);
+  margin: var(--spacing-rg);
+  box-shadow: var(--dropshadow);
+}
+
+.delivery-title {
   font-weight: var(--bold);
   font-size: var(--font-xl);
   text-align: center;
 }
 
-.delivery__table {
-  width: 100%;
-  margin-left: var(--spacing-s);
+.delivery-table {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.delivery__table,
+.delivery-table,
 th,
 td {
   border: 1px solid black;
   border-collapse: collapse;
-  text-align: center;
-  position: relative;
-  font-size: var(--font-rg);
-}
-.delivery__table--header {
-  font-weight: var(--semi-bold);
+  padding: var(--spacing-rg);
 }
 
-.delivery__table--content {
+.delivery-table__header {
+  font-size: var(--font-rg);
+}
+
+.delivery-table__row {
+  font-size: var(--font-rg);
   font-weight: var(--light);
 }
-.delivery__table--service {
-  font-weight: var(--regular);
+
+.delivery-add {
+  margin: var(--spacing-rg);
+  padding: var(--spacing-s) var(--spacing-rg);
+  background-color: var(--white);
+  border: 1px solid black;
+  float: right;
 }
-.delivery__table--actions a {
-  text-decoration: none;
-  cursor: pointer;
-} */
+
+.delivery-add:active {
+  background-color: var(--black);
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+
+.delivery-card__form {
+  text-align: center;
+}
+
+.form-inputs > input {
+  margin: var(--spacing-rg) 0 var(--spacing-rg) var(--spacing-s);
+  border-bottom: 1px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}

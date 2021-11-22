@@ -37,7 +37,6 @@ td {
 
 .products-table__header {
   font-size: var(--font-rg);
-  font-weight: var(--light);
 }
 
 .products-table__row {

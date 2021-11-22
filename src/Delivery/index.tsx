@@ -1,9 +1,14 @@
 import '../stylesheets/delivery.css';
+import AddDelivery from './AddDelivery';
+import DeliveryList from './DeliveryList';
+import EditDelivery from './EditDelivery';
 
 function Delivery() {
   return (
-    <div>
-      <h1>delivery</h1>
+    <div className="delivery-container">
+      <DeliveryList />
+      <AddDelivery />
+      <EditDelivery />
     </div>
   );
 }
