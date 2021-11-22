@@ -14,6 +14,12 @@
   padding: var(--spacing-rg) var(--spacing-rg) 0 0;
 }
 
+.nav__menu-items a {
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-rg);
+}
+
 .nav-logo__img {
   width: 142px;
 }

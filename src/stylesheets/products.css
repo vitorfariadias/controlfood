@@ -10,6 +10,7 @@
 .products-card {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: green;
   border-radius: var(--radius-rg);
   padding: var(--spacing-rg);
@@ -25,5 +26,5 @@ td {
 
 .products-add {
   margin: var(--spacing-rg);
-  justify-content: flex-end;
+  align-items: flex-end;
 }

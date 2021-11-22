@@ -15,6 +15,9 @@ Repositório para o projeto ControlFood, integrante do Projeto Integrador do 6º
 * React - [Documentação Oficial React](https://pt-br.reactjs.org/)
 * React Router - [Documentação Oficial React Router](https://reactrouter.com/)
 
+## Bibliotecas
+* Axios - [Documentação Oficial Axios](https://axios-http.com/)
+
 ## Linguagens de Programação
 * HTML - 
 * Typescript - [Documentação Oficial Typescript](https://www.typescriptlang.org/)
