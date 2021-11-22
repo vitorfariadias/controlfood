@@ -7,15 +7,17 @@ import User from './User';
 
 function RoutesFunction() {
   return (
-    <BrowserRouter>
-      {/* <Navbar /> */}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/delivery" element={<Delivery />} />
-        <Route path="/user" element={<User />} />
-      </Routes>
-    </BrowserRouter>
+    <div className="grid">
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/delivery" element={<Delivery />} />
+          <Route path="/user" element={<User />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 export default RoutesFunction;

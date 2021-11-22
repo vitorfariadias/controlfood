@@ -1,14 +1,18 @@
 import '../stylesheets/products.css';
+import AddProducts from './AddProducts';
+import EditProducts from './EditProducts';
 import ProductsList from './ProductsList';
 
 function Products() {
   return (
-    <section className="products-content">
+    <div className="products-content">
       <div className="products-card">
-        <h1 className='produtos-card__title'>Produtos</h1>
         <ProductsList />
       </div>
-    </section>
+
+      <AddProducts />
+      <EditProducts />
+    </div>
   );
 }
 

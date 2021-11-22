@@ -1,19 +1,30 @@
 @import url('./utils/variables.css');
-/* @import url('/src/App.css'); */
 
 .products-content {
-  display: grid;
   grid-area: content;
-  background-color: var(--background-grey);
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
 }
 
 .products-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: green;
+  display: block;
+  background-color: white;
   border-radius: var(--radius-rg);
   padding: var(--spacing-rg);
+  margin: var(--spacing-rg);
+  box-shadow: var(--dropshadow);
+}
+
+.produtos-card__title {
+  font-weight: var(--bold);
+  font-size: var(--font-xl);
+  text-align: center;
+}
+
+.products-table {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .products-table,
@@ -24,7 +35,38 @@ td {
   padding: var(--spacing-rg);
 }
 
+.products-table__header {
+  font-size: var(--font-rg);
+  font-weight: var(--light);
+}
+
+.products-table__row {
+  font-size: var(--font-rg);
+  font-weight: var(--light);
+}
+
 .products-add {
   margin: var(--spacing-rg);
-  align-items: flex-end;
+  padding: var(--spacing-s) var(--spacing-rg);
+  background-color: var(--white);
+  border: 1px solid black;
+  float: right;
+}
+
+.products-add:active {
+  background-color: var(--black);
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+
+.products-card__form {
+  text-align: center;
+}
+
+.form-inputs > input {
+  margin: var(--spacing-rg) 0 var(--spacing-rg) var(--spacing-s);
+  border-bottom: 1px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }

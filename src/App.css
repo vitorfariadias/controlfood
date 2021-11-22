@@ -4,17 +4,16 @@ html,
 body {
   margin: 0px;
   padding: 0px;
+  background-color: var(--background-grey);
+  box-sizing: border-box;
+  /* overflow: hidden; */
+  font-family: var(--font-family-01);
 }
-
-body {
+.grid {
   display: grid;
   grid-template-columns: 175px 1fr;
   grid-template-areas: 'navbar content';
   gap: 20px;
-  font-family: var(--font-family-01);
-  overflow: hidden;
-  box-sizing: border-box;
-  background-color: grey;
 }
 
 a {
