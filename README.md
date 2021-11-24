@@ -19,7 +19,6 @@ Repositório para o projeto ControlFood, integrante do Projeto Integrador do 6º
 * Axios - [Documentação Oficial Axios](https://axios-http.com/)
 
 ## Linguagens de Programação
-* HTML - 
 * Typescript - [Documentação Oficial Typescript](https://www.typescriptlang.org/)
 
 ## Gerenciador de Pacotes
